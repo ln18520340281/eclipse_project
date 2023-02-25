@@ -12,6 +12,7 @@ public class Mybatis_plus_config {
 	public MybatisPlusInterceptor mybatisPlusInterceptor() {
 		MybatisPlusInterceptor interceptor = new MybatisPlusInterceptor();
 		interceptor.addInnerInterceptor(new PaginationInnerInterceptor());
+		System.out.println("配置成功");
 		return interceptor;
 	}
 }
